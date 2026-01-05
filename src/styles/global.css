@@ -1,0 +1,103 @@
+/* src/styles/global.css */
+
+/* Base layout */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f6f9;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+  color: #212529;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+}
+
+/* Cards: light, rounded, subtle shadow */
+.card {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+/* Buttons: slightly rounded */
+.btn {
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+/* Tables */
+.main-table {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+}
+
+.main-table thead {
+  background-color: #f1f3f5;
+}
+
+.main-table thead th {
+  border-bottom: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.main-table tbody tr {
+  transition: background-color 0.15s ease, transform 0.05s ease;
+}
+
+.main-table tbody tr:hover {
+  background-color: #f8fbff;
+}
+
+.main-table td,
+.main-table th {
+  vertical-align: middle;
+}
+
+/* Forms: rounded inputs with slight shadow */
+.form-control,
+.form-select {
+  border-radius: 8px;
+  border-color: #dee2e6;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* Spacing for main content */
+.container {
+  padding-bottom: 2rem;
+}
+
+/* Alerts: slightly rounded */
+.alert {
+  border-radius: 10px;
+}
+
+/* Auth pages: center cards a bit nicer on larger screens */
+@media (min-width: 768px) {
+  .card.mx-auto {
+    margin-top: 3rem;
+  }
+}

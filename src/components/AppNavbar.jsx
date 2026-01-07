@@ -15,7 +15,7 @@ function AppNavbar() {
     <Navbar bg="dark" variant="dark" expand="md">
       <Container>
         <Navbar.Brand as={NavLink} to="/bookings">
-          TicketFlow
+          EventEase
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
